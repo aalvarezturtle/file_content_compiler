@@ -28,7 +28,7 @@
 
 ```python
 # Directory/folder of code to compile into single .txt file
-directory: str = r"C:\\JPMC\DEV\\TMP\ds\Scripts\\myWorkflow"
+directory: str = os.path.join(os.path.expanduser("~"), "Documents")
 
 # Specific file extensions to include in compilation
 extensions: Tuple[str, ...] = (".py", ".json")
